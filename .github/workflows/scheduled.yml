@@ -19,11 +19,11 @@ jobs:
         with:
           repository: ${{ github.repository }}
           github-token: ${{ secrets.MY_GITHUB_TOKEN }}
-          path: github_manager
+          path: yellowmomo
 
       - name: Add date and push
         run: |
-          cd github_manager
+          cd yellowmomo
           date >> date.txt
           git add .
           git config --global user.email "github-actions@github.com"
