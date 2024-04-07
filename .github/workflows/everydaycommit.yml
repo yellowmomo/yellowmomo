@@ -1,0 +1,29 @@
+name: Scheduled Jobs
+
+on:
+  schedule:
+    - cron: '0 0 * * *' # 매 분마다 실행됩니다.
+
+jobs:
+  test_schedule:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Hello World
+        run: echo "Hello World"
+
+      - name: repository checkout
+        uses: actions/checkout@v2
+        with:
+          repository: ${{ github.repository }}
+          github-token: ${{ secrets.MY_GITHUB_TOKEN }}
+          path: yellowmomo
+
+      - name: Add date and push
+        run: |
+          cd yellowmomo
+          date >> date.txt
+          git add .
+          git config --global user.email "github-actions@github.com"
+          git config --global user.name "github-actions"
+          git commit -am "Inject Date"
+          git push
