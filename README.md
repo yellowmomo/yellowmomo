@@ -1,5 +1,5 @@
 ### Hi there 👋
-<img src="https://github.com/yellowmomo/yellowmomo/blob/output/github-snake-dark.svg" width="100%">
+<img src="https://github.com/yellowmomo/yellowmomo/blob/output/github-snake.svg" width="100%">
 <!--
 **yellowmomo/yellowmomo** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
