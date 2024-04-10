@@ -22,7 +22,7 @@ jobs:
           github_user_name: yellowmomo
           outputs: |
             dist/github-snake.svg
-            dist/github-snake-dark.svg?palette=github-dark
+            dist/github-snake-dark.svg?color_snake=#58A6FF&color_dots=#E7D6A8,#E6C19F,#E19C88,#DB787E,#D85C6E?palette=github-dark
 
       - name: push github-contribution-grid-snake.svg to the output branch
         uses: crazy-max/ghaction-github-pages@v3.1.0
